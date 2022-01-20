@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link penghubung dengan css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- css slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    <!--Judul website-->
+    <title>T-Kes</title>
+</head>
+<body>
+    <!-- bantuan box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> 
+
+    <!-- scrool-->
+    <a href="#" class="scrollAtas" id="scroll-Atas">
+        <i class='bx bx-chevrons-up scrollAtas__icon' ></i>
+    </a>
+
+    <!--Navbar-->
+    <nav>
+        <!--Navbar has two part the top one and the bottom one-->
+        <!--Here is top one and in this part I put logo, my account part, and the shopping cart-->
+        <div class="navbar-top">
+            <button id="menuButton"><i class='bx bx-menu' ></i></button>
+            <div>
+                
+                <!--Shopping cart-->
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <!--Shopping cart logo-->
+                        <i
+                            class='bx bx-basket shoppingCartButton'
+                        ></i>
+                        <!--The total prices of products in the shopping cart -->
+                        <h6 id="sum-prices"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar bottom part -->
+        <!-- Here I put the links to the other pages or nav links -->
+            <!-- The searchbar which will be in the right side of the links -->
+            
+        <div class="producstOnCart hide">
+            <div class="overlay"></div>
+            <div class="top">
+                <button id="closeButton">
+                    <i class='bx bxs-x-circle'></i>
+                </button>
+                <h3>Keranjang milikmu</h3>
+            </div>
+            <ul id="buyItems">
+                <h4 class="empty">Your shopping cart is empty</h4>
+            </ul>
+            <button class="btn checkout hidden">Check out</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <a href="#" class="nav__logo">T-Kes</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#homeAbout" class="nav-link active">Home</a></li>
+                    <li class="nav__item"><a href="#kategori" class="nav-link">Kategori</a></li>
+                    <li class="nav__item"><a href="#rekomendasi" class="nav-link">Rekomendasi</a></li>
+                    <li class="nav__item"><a href="#kritik_saran" class="nav-link">Kritik & Saran</a></li>
+                    <li class="nav__item"><a href="#contact_us" class="nav-link">Contact Us</a></li>
+                    <li class="nav__item"><a href="halaman_informasi.html" class="nav-link">Info Kesehatan</a></li>
+                    
+                    <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="search__container" id="search">
+                <div class="search__icon">
+                    <i class='bx bx-search-alt'></i>
+                    <input type="text" id="output" onkeyup="search__func()" placeholder="Apa yang ingin dicari??">
+                    <i class='bx bxs-x-circle' id="erase" onclick="erase__input()"></i>
+                </div>
+            </div>
+
+            
+
+            
+            
+            
+        </nav>
+
+        <div class="center">
+            <button id="show-login">Login</button>
+        </div>
+        <div class="popUp">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Log in</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukan email anda">
+                </div>
+        
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukan password anda">
+                </div>
+        
+                <div class="form-element">
+                    <input type="checkbox" id="remember" >
+                    <label for="remember">Remember me</label>
+                </div>
+        
+                <div class="form-element">
+                    <button>Sign in</button>
+                </div>
+        
+                <div class="form-element">
+                    <a href="">Lupa password??</a>
+                    <a href="register.html">Belum memiliki akun</a>
+                </div>
+            </div>
+        </div>
+    </header>   
+    <main class="main-1">
+        <!-- bagian home dan about--> 
+        <section class="homeAbout" id="homeAbout">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <div class="homeAbout__container bd-container bd-grid">
+                        <div class="homeAbout__data">
+                            <h1 class="homeAbout__title">Toko Kesehatan</h1>
+                            <h2 class="homeAbout__sub">Selamat Datang</h2>
+                            <h2 class="homeAbout__sub">Selamat membaca dan berbelanja</h2>
+                            <a href="#" class="button">Pelajari lebih lanjut</a>
+                        </div>
+                        <img src="gambar/selamatDatang.png" alt="" class="homeSlide">
+                    </div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="homeAbout__container bd-container bd-grid">
+                        <div class="homeAbout__data">
+                            <h1 class="homeAbout__title">Toko Kesehatan</h1>
+                            <h2 class="homeAbout__sub">Kami menyediakan berbagai kebutuhan untuk menunjang kesehatan anda</h2>
+                            <a href="#" class="button">Pelajari lebih lanjut</a>
+                        </div>
+                        <img src="gambar/vitamin_home.png" alt="" class="homeSlide">
+                    </div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="homeAbout__container bd-container bd-grid">
+                        <div class="homeAbout__data">
+                            <h1 class="homeAbout__title">Toko Kesehatan</h1>
+                            <h2 class="homeAbout__sub">Membagikan informasi seputar kesehatan</h2>
+                            <a href="#" class="button">Pelajari lebih lanjut</a>
+                        </div>
+                        <img src="gambar/pertama.png" alt="" class="homeSlide">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- next dan prev button-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <!-- titik tiga slide -->
+        <div style="text-align: center; " >
+            <span class="dots" onclick="currentSlide(1)" ></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dot" ></span>
+        </div>
+    
+        <!-- kategori-->
+        <section class="kategori section bd-container " id="kategori">
+            <span style="font-weight: bold;" class="section-title" >KATEGORI</span>
+            <div class="kategori__container bd-grid">
+                <div class="kategori__content">
+                    <img src="gambar/makanan.png" alt="" class="kategori__img">
+                    <h3 class="kategori__title"><a href="hal_makanan.html">Makanan</a></h3>
+                </div>
+
+                <div class="kategori__content">
+                    <img src="gambar/minuman.png" alt="" class="kategori__img">
+                    <h3 class="kategori__title"><a href="hal_minuman.html">Minuman</a></h3>
+                </div>
+
+                <div class="kategori__content">
+                    <img src="gambar/alatKesehatan.png" alt="" class="kategori__img">
+                    <h3 class="kategori__title"><a href="hal_alatKesehatan.html">Alat kesehatan</a></h3>
+                </div>
+
+                <div class="kategori__content">
+                    <img src="gambar/vitamin.png" alt="" class="kategori__img">
+                    <h3 class="kategori__title"><a href="hal_vitamin.html">Vitamin</a></h3>
+                </div>
+
+                <div class="kategori__content">
+                    <img src="gambar/alatOlahraga.png" alt="" class="kategori__img">
+                    <h3 class="kategori__title"><a href="hal_alatOlahraga.html">Alat olahraga</a></h3>
+                </div>
+
+                <div class="kategori__content">
+                    <img src="gambar/tebusObat.png" alt="" class="kategori__img">
+                    <h3 class="kategori__title"><a href="hal_obat.html">Tebus Obat</a></h3>
+                </div>
+            </div> 
+        </section>
+
+        
+        <!-- rekomendasi -->
+        <section class="rekomendasi section bd-container" id="rekomendasi">
+            <h1 class="section-title">REKOMENDASI</h1>
+            <div class="rekomendasi__container bd-grid logo-slider slick_two">
+                <div class="rekomendasi__content">
+                    <img src="gambar/ukursuhu.png" alt=""  class="rekomendasi__img">
+                    <h3 class="rekomendasi__nama">Thermogun</h3>
+                    <span class="rekomendasi__detail">Alat Kesehatan</span><br>
+                    <span class="rekomendasi__harga">Rp.15000</span>
+                    <a href="hal_alatKesehatan.html" class="button rekomendasi__button__detail">Detail Produk</a>
+                </div>
+    
+                <div class="rekomendasi__content">
+                    <img src="gambar/treadmillR.png" alt=""  class="rekomendasi__img">
+                    <h3 class="rekomendasi__nama">MGIZLJJ Electrik Treadmill</h3>
+                    <span class="rekomendasi__detail">Alat Olahraga</span><br>
+                    <span class="rekomendasi__harga">Rp.12000000</span>
+                    <a href="hal_alatOlahraga.html" class="button rekomendasi__button__detail">Detail Produk</a>
+                </div>
+    
+                <div class="rekomendasi__content">
+                    <img src="gambar/jamuT.png" alt=""  class="rekomendasi__img">
+                    <h3 class="rekomendasi__nama">Beraneka Jamu</h3>
+                    <span class="rekomendasi__detail">Minuman</span><br>
+                    <span class="rekomendasi__harga">Rp.15000</span>
+                    <a href="hal_minuman.html" class="button rekomendasi__button__detail">Detail Produk</a>
+                </div>
+
+                <div class="rekomendasi__content">
+                    <img src="gambar/nugetTahuSayurT.png" alt=""  class="rekomendasi__img">
+                    <h3 class="rekomendasi__nama">Nuget Tahu dan Sayur</h3>
+                    <span class="rekomendasi__detail">Makanan</span><br>
+                    <span class="rekomendasi__harga">Rp.50000</span>
+                    <a href="hal_makanan.html" class="button rekomendasi__button__detail">Detail Produk</a>
+                </div>
+    
+                <div class="rekomendasi__content">
+                    <img src="gambar/vitaminMatat.png" alt=""  class="rekomendasi__img">
+                    <h3 class="rekomendasi__nama">Ocuvite</h3>
+                    <span class="rekomendasi__detail">Vitamin</span><br>
+                    <span class="rekomendasi__harga">Rp.27000</span>
+                    <a href="hal_vitamin.html" class="button rekomendasi__button__detail">Detail Produk</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- kritik dan saran -->
+        <section class="kritikSaran__container" id="kritik_saran">
+            <h1 class="section-title">KRITIK dan SARAN</h1>
+            <form action="" method="POST">
+                <div class="atas">
+                    <input type="text" placeholder="First name">
+                    <input type="email" placeholder="Your Email">
+                </div>
+
+                <div class="bawah">
+                    <input type="text" placeholder="Last name">
+                    <input type="number" placeholder="Your age">
+                </div>
+
+                <div class="krisan">
+                    <input type="text" placeholder="Saran">
+                    <input type="text" placeholder="Kritik">
+                </div>
+                
+                <input type="submit" value="Send this">
+                <p>If you agree, you should click this button </p>
+            </form>
+        </section>
+        <!--contact us-->
+    
+    </main> 
+    <!-- footer -->
+    <footer class="footer section ">
+        <div class="footer__container bd-grid" id="contact_us">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">T-Kes</a>
+                <span class="footer_detail">Store</span>
+            </div>
+            <div>
+                <a href="#" class="footer__medsos"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#" class="footer__medsos"><i class='bx bx-phone-call' ></i></a>
+                <a href="#" class="footer__medsos"><i class='bx bxl-telegram' ></i></a>
+            </div>
+
+            <div class="footer__content">
+                <h3>Sevice</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Shipping and Returns</a></li>
+                    <li><a href="#" class="footer__link">Mesurement Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="#" class="footer__link"></a>Event</li>
+                    <li><a href="#" class="footer__link"></a>Contact Us</li>
+                    <li><a href="#" class="footer__link"></a>Privacy policy</li>
+                    <li><a href="#" class="footer__link"></a>Terms of service</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3>Adress</h3>
+                <ul>
+                    <li>Jalan Hayalan Maju,Mana Saja No.1</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2022 Shibaa Azmi.All right reserved</p>
+    </footer>
+
+    <!--scrool reveral-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Java Script-->
+    <script src="java_script/utama.js"></script>
+    <script src="java_script/login.js"></script>
+    <script src="java_script/register.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="java_script/slick.js"></script>
+    <script src="java_script/slick.min.js"></script>
+
+    <script>
+        $('.slick_two').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 1700,
+            responsive:[
+                {
+                    breakpoint: 5000,
+                    settings:{
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings:{
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    </script>
+
+</body>
+</html>

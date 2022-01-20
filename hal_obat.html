@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>T-kes </title>
+    <link rel="stylesheet" href="css/formTO.css">
+</head>
+<body>
+    
+    <form action="" method="POST" enctype="multipart/form-data">
+
+        <div class="pasien">
+            <table border="1" cellspacing="8" >
+                <a class="prev__info" onclick="plusSlides(-1)" href="index.html #kategori">&#10094;</a>
+                <h3>Formulir</h3>
+                <tr>
+                    <td>Nama Lengkap </td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" placeholder="masukan nama lengkap... "/></td>
+                </tr>
+
+                <tr>
+                    <td>No Telepon </td>
+                    <td>:</td>
+                    <td><input type="text" name="tlp" placeholder="masukan nomor telp... "/></td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin </td>
+                    <td>:</td>
+                    <td> <select name="jk">
+                        <option value="Laki - Laki">Laki - Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td>Tempat,Tanggal lahir</td>
+                    <td>:</td>
+                    <td><input type="text" name="tempat" placeholder="masukan tempat kelahiran"/></td>
+                    <td><input type="date" name="tl" /></td>
+                </tr>
+
+                <tr>
+                    <td>Umur</td>
+                    <td>:</td>
+                    <td><input type="number" name="umur"/>tahun</td>
+                </tr>
+
+                <tr>
+                    <td>Nama Rumah Sakit </td>
+                    <td> :</td>
+                    <td><select name="rs">
+                        <option value="1" selected="selected">RSUD AMBARAWA</option>
+                        <option value="2">RS Umum Pusat Dr. Kariadi</option>
+                        <option value="3">RS Paru Dr. Ario Wirawan</option>
+                        <option value="4">RS Umum Daerah K.R.M.T Wongsonegoro</option>
+                        <option value="5">RS Umum Daerah Salatiga</option>
+                        
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td> Nama Dokter </td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" placeholder="masukan nama dokter pemeriksa"/></td>
+                </tr>
+                
+                <tr>
+                    <td> Nama Obat</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" placeholder="masukan nama obat"/></td>
+                </tr>
+                
+                <tr>
+                    <td>lampirkan foto resep obat dengan jelas</td>
+                    <td></td>
+                    <td><input type="file" name="imgakte" accept="image/*"/></td>
+                </tr>
+
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                </tr>
+                <tr>
+                    <td>Desa/Kel. </td>
+                    <td> :</td>
+                    <td><input type="text" name="desa"/></td>
+                    </blockquote>
+                </tr>
+                <tr>
+                    <td>Kecamatan</td>
+                    <td>:</td>
+                    <td><input type="text" name="kec"/></td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td><input type="text" name="prov"/></td>
+                </tr>
+
+                <tr>
+                    <td>lampirkan foto bukti pembayaran dengan jelas</td>
+                    <td></td>
+                    <td><input type="file" name="imgakte" accept="image/*"/></td>
+                </tr>
+            </table>
+        </div>
+        <button>KIRIM</button>
+    </form>
+    
+</body>
+</html>

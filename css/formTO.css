@@ -1,0 +1,82 @@
+/* ========== google font ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400;1,500 600&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Poppins',sans-serif;
+    background:#070113d7;
+    background-size: cover;
+    margin-left: 60px;
+    color: white;
+
+}
+
+
+table p{
+    font-size: 50px;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0%;
+    
+}
+
+
+input{
+    width:98.5%;
+}
+
+
+h3 {
+    margin-top: 40px;
+    font-size: 27px;
+    text-align: center;
+}
+
+.pasien table{
+    margin-top: 50px;
+    margin-left: 26%;
+}
+
+button {
+    margin-left: 80%;
+    font-size: 24px;
+    font-weight:bold ;
+    color: black;
+    margin-top: 40px;
+}
+
+button:hover{
+    background-color:#F08080;
+}
+
+/* ========== prev dan next button ==========*/
+.prev__info{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 21px;
+    color:#F08080;;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.6 ease;
+    border-radius: 0px 3px 3px 0px;
+    user-select: none;
+}
+
+
+
+/* ========== memberikan warna hitam pada background dengan tambahan see-thorough ==========*/
+.prev__info:hover{
+    background-color:#F08080;
+    color: #1d335f;
+}
